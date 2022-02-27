@@ -1,10 +1,15 @@
 {{^_disableContribution}}
 <div class="contribution-panel mobile-hide">
     {{#docurl}}
-    <a href="{{docurl}}" title="{{__global.improveThisDoc}}" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+    <span class="small pull-right mobile-hide">
+      <span class="divider"> </span>
+      <a href="{{docurl}}" title="{{__global.improveThisDoc}}"><i class="fa fa-pencil"></i></a>
+    </span>
     {{/docurl}}
     {{#sourceurl}}
-    <a href="{{sourceurl}}" title="{{__global.viewSource}}" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+    <span class="small pull-right mobile-hide">
+      <a href="{{sourceurl}}" title="{{__global.viewSource}}"><i class="fa fa-code"></i></a>
+    </span>
     {{/sourceurl}}
 </div>
 {{/_disableContribution}}
