@@ -1,54 +1,25 @@
-# docfx-tmpl
-A DocFX Template patching the Default template.
+# docfx-lavandula
+A minimalist DocFX template. Based on [MathewSachin/docfx-tmpl](https://github.com/MathewSachin/docfx-tmpl).
 
-Supported DocFX version: [v2.17.4](https://github.com/dotnet/docfx/releases/tag/v2.17.4)
+![Screenshot](screenshots/1.png)
 
-## Changes from Default Template
-- Full Width (uses container-fluid instead of container).
-- Affix sidebar styled like Bootstrap Documentation.
-- Thinner TOC toggle button on mobiles.
-- Hides the **IN THIS ARTICLE** heading above sidebar.
-- Tabular views for Namespace.
-- Pretty tables for Class view.
-- Collapsible sections in API documentation.
-- Round Buttons for View-Source and Edit.
-- Different colors.
+## Usage
 
-## How to use
-The template is contained in the source folder.
-
-**Clone or Download**  
-In a terminal, run: `git clone https://github.com/MathewSachin/docfx-tmpl.git`
-
-**Apply Template**  
-Use `default, <relative path to src folder of this template>`
-
-In docfx.json (showing only relevant portion):
+In docfx.json:
 
 ```json
 {
     "build": {
         "template": [
             "default",
-            "docfx-tmpl/src"
+            "docfx-lavandula/src"
         ]
     }
 }
 ```
 
-**OR**
-
-In Command-line:
+With the command line:
 
 ```
-docfx -t default,docfx-tmpl/src
+docfx -t default,docfx-lavandula/src
 ```
-
-## ScreenShots
-![Large](screenshots/1.png)
-
-![Small](screenshots/2.png)
-
-![XS](screenshots/3.png)
-
-![Navbar](screenshots/4.png)
